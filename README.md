@@ -1,86 +1,34 @@
-<div align="center">
-
 # 🚚 Sistema de Logística Distribuído
 
-### *Sistema distribuído completo para gestão de frotas e roteirização de entregas*
+Sistema distribuído completo para gestão de frotas e roteirização de entregas, desenvolvido como trabalho acadêmico de Sistemas Distribuídos.
 
-[![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)](https://github.com/seu-usuario/sistema-logistica-distribuido)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=for-the-badge&logo=node.js)](https://nodejs.org)
-[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue?style=for-the-badge&logo=postgresql)](https://postgresql.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://typescriptlang.org)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+![Tecnologia](https://img.shields.io/badge/Tech-Node.js%20|%20React%20|%20PostgreSQL-blue)
+![Arquitetura](https://img.shields.io/badge/Arquitetura-Microserviços-orange)
 
-<img src="https://raw.githubusercontent.com/seu-usuario/sistema-logistica-distribuido/main/docs/demo.gif" alt="Demo do Sistema" width="800px" />
+## 📋 **Índice**
 
-*Trabalho acadêmico desenvolvido para a disciplina de **Sistemas Distribuídos***
-
----
-
-### 🌟 **Funcionalidades Principais**
-
-| **👥 Motoristas** | **🚛 Rotas** | **📊 Analytics** |
-|:---:|:---:|:---:|
-| CRUD Completo | Roteirização Inteligente | Dashboard em Tempo Real |
-| Validações Robustas | Comunicação Entre Serviços | KPIs e Métricas |
-| Filtros Avançados | Gestão de Status | Performance Tracking |
-
+- [Visão Geral](#visão-geral)
+- [Arquitetura](#arquitetura)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Instalação e Configuração](#instalação-e-configuração)
+- [Como Usar](#como-usar)
+- [API Endpoints](#api-endpoints)
+- [Demonstração](#demonstração)
+- [Arquivos do Projeto](#arquivos-do-projeto)
 
 ---
 
-</div>
+## 🎯 **Visão Geral**
 
----
+Este sistema implementa uma **arquitetura de microserviços** para gerenciamento de frotas de caminhões, permitindo:
 
-## 🚀 **Quick Start**
-
-```bash
-# 1️⃣ Clone o repositório
-git clone https://github.com/seu-usuario/sistema-logistica-distribuido.git
-cd sistema-logistica-distribuido
-
-# 2️⃣ Configure o PostgreSQL
-createdb logistica
-
-# 3️⃣ Inicie o backend de cadastro
-cd services/cadastro-service
-npm install && npm run dev
-
-# 4️⃣ Inicie o backend de rotas (novo terminal)
-cd services/roteirizacao-service
-npm install && npm run dev
-
-# 5️⃣ Inicie o frontend (novo terminal)
-cd frontend
-npm install && npm start
-
-# 🎉 Acesse: http://localhost:3001
-```
-
-<div align="center">
-
-
-</div>
-
----
-
-## 🎯 **Sobre o Projeto**
-
-Este sistema implementa uma **arquitetura de microserviços** para gerenciamento de frotas de caminhões, demonstrando na prática os conceitos fundamentais de sistemas distribuídos.
-
-### **🏆 Objetivos Alcançados**
-- ✅ **Comunicação entre serviços** via REST API
-- ✅ **Persistência distribuída** com PostgreSQL
-- ✅ **Sistema de eventos** assíncronos
-- ✅ **Interface moderna** e responsiva
-- ✅ **Validações robustas** e tratamento de erros
-- ✅ **Documentação completa** e profissional
-
-### **💡 Conceitos Aplicados**
-- **Microserviços independentes** com responsabilidades específicas
-- **API RESTful** padronizada para comunicação
-- **Event-driven architecture** para desacoplamento
-- **Single Page Application** com React
-- **Banco de dados relacional** compartilhado
+- 👥 **Gestão de Motoristas** - CRUD completo com validações
+- 🚛 **Roteirização Inteligente** - Criação e acompanhamento de rotas
+- 📊 **Dashboard em Tempo Real** - Métricas e estatísticas
+- 🔄 **Comunicação entre Serviços** - Via REST API
+- 📢 **Sistema de Eventos** - Mensageria assíncrona
 
 ---
 
@@ -130,82 +78,65 @@ Este sistema implementa uma **arquitetura de microserviços** para gerenciamento
 
 ---
 
----
+## 🛠️ **Tecnologias Utilizadas**
 
-## 🛠️ **Stack Tecnológica**
+### **Backend:**
+- **Node.js** - Runtime JavaScript
+- **Express.js** - Framework web
+- **PostgreSQL** - Banco de dados relacional
+- **Axios** - Cliente HTTP para comunicação entre serviços
+- **CORS** - Middleware para Cross-Origin Resource Sharing
 
-<div align="center">
+### **Frontend:**
+- **React 18** - Biblioteca para interfaces
+- **TypeScript** - JavaScript tipado
+- **CSS3** - Estilização moderna
+- **Axios** - Cliente HTTP
 
-### **Backend**
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
-[![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
+### **Ferramentas de Desenvolvimento:**
+- **Nodemon** - Reinicialização automática
+- **pgAdmin** - Interface gráfica para PostgreSQL
+- **VS Code** - Editor de código
+- **GitHub Desktop** - Controle de versão
 
-### **Frontend**
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
-
-### **Ferramentas**
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
-[![pgAdmin](https://img.shields.io/badge/pgAdmin-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://pgadmin.org)
-
-</div>
-
----
+### **Arquitetura:**
+- **Microserviços** - Serviços independentes
+- **REST API** - Comunicação padronizada
+- **Event-Driven** - Sistema de eventos assíncronos
 
 ---
 
 ## ⚡ **Funcionalidades**
 
-<div align="center">
-
-| 🎯 **Funcionalidade** | 📝 **Descrição** | ✅ **Status** |
-|:---------------------:|:---------------:|:-------------:|
-| **👥 CRUD Motoristas** | Cadastro completo com validações | Implementado |
-| **🚛 Gestão de Rotas** | Criação e acompanhamento de entregas | Implementado |
-| **📊 Dashboard Analytics** | KPIs e métricas em tempo real | Implementado |
-| **🔄 Comunicação entre Serviços** | REST API + Sistema de Eventos | Implementado |
-| **🔍 Filtros Avançados** | Busca por múltiplos critérios | Implementado |
-| **📱 Interface Responsiva** | Mobile-first design | Implementado |
-| **⚠️ Validações Robustas** | Frontend + Backend | Implementado |
-| **🎨 UX/UI Moderna** | Design profissional | Implementado |
-
-</div>
-
 ### **👥 Gestão de Motoristas**
-```typescript
-// Funcionalidades implementadas
-✅ Cadastro com validações (CNH, email, idade)
-✅ Edição de informações
-✅ Ativação/desativação
-✅ Filtros por status e categoria CNH
-✅ Listagem paginada
-✅ Exclusão com confirmação
-```
+- ✅ Cadastro com validações (CNH, email, idade)
+- ✅ Edição de informações
+- ✅ Ativação/desativação
+- ✅ Filtros por status e categoria CNH
+- ✅ Listagem paginada
 
 ### **🚛 Gestão de Rotas**
-```typescript
-// Workflow completo
-✅ Criação → Seleção de motorista ativo
-✅ Pendente → Em Andamento → Concluída
-✅ Cálculo automático de distância/tempo
-✅ Priorização (Baixa, Normal, Alta, Urgente)
-✅ Observações e notas especiais
-✅ Histórico completo com timestamps
-```
+- ✅ Criação de rotas com seleção de motorista
+- ✅ Cálculo automático de distância e tempo
+- ✅ Controle de status (Pendente → Em Andamento → Concluída)
+- ✅ Priorização de entregas
+- ✅ Filtros avançados
+- ✅ Histórico completo
 
-### **📊 Dashboard & Analytics**
-```typescript
-// Métricas em tempo real
-✅ Total de motoristas (ativos/inativos)
-✅ Total de rotas por status
-✅ Distância total percorrida
-✅ Tempo médio por entrega
-✅ Taxa de conclusão
-✅ Performance por motorista
-```
+### **📊 Dashboard Analítico**
+- ✅ KPIs em tempo real
+- ✅ Estatísticas de motoristas
+- ✅ Métricas de performance
+- ✅ Taxa de conclusão
+- ✅ Atualização automática
+
+### **🔧 Funcionalidades Técnicas**
+- ✅ Comunicação entre microserviços
+- ✅ Sistema de eventos assíncronos
+- ✅ Validações robustas
+- ✅ Tratamento de erros
+- ✅ Interface responsiva
+- ✅ Operações CRUD completas
 
 ---
 
@@ -218,7 +149,7 @@ Este sistema implementa uma **arquitetura de microserviços** para gerenciamento
 
 ### **1. Clonar o Repositório:**
 ```bash
-git clone https://github.com/seu-usuario/sistema-logistica-distribuido.git
+git clone https://github.com/HenriquePlebani/sistema-logistica-distribuido.git
 cd sistema-logistica-distribuido
 ```
 
@@ -440,17 +371,15 @@ Content-Type: application/json
 
 ```
 Frontend                Cadastro               Roteirização
-   │                       │                       │
-   ├─── POST /motoristas ──►                       │
-   │◄─── Motorista criado ──┤                       │
-   │                       │                       │
+   │                       │                        │
+   ├─── POST /motoristas ──►                        │
+   │◄─── Motorista criado ─┤                        │
+   │                       │                        │
    ├─── POST /rota ────────────────────────────────►│
    │                       │◄─── GET motorista/1 ───┤
    │                       ├─── Dados motorista ───►│
-   │◄─── Rota criada ──────────────────────────────┤
+   │◄─── Rota criada ───────────────────────────────┤
 ```
-
----
 
 ---
 
@@ -458,62 +387,30 @@ Frontend                Cadastro               Roteirização
 
 ```
 sistema-logistica-distribuido/
-├── 📄 README.md                    # Documentação principal
-├── 📁 services/                    # Microserviços backend
-│   ├── 📁 cadastro-service/        # Serviço de motoristas
+├── 📄 README.md                    # Este arquivo
+├── 📁 services/
+│   ├── 📁 cadastro-service/
 │   │   ├── 📄 package.json
 │   │   └── 📁 src/
-│   │       └── 📄 app.js           # API REST + EventBus
-│   └── 📁 roteirizacao-service/    # Serviço de rotas
+│   │       └── 📄 app.js           # API de motoristas
+│   └── 📁 roteirizacao-service/
 │       ├── 📄 package.json
 │       └── 📁 src/
-│           └── 📄 app.js           # API REST + Comunicação
-├── 📁 frontend/                    # Interface React
+│           └── 📄 app.js           # API de rotas
+├── 📁 frontend/
 │   ├── 📄 package.json
 │   ├── 📁 src/
-│   │   ├── 📄 App.tsx              # Componente raiz
+│   │   ├── 📄 App.tsx              # Componente principal
 │   │   ├── 📄 index.css            # Estilos globais
-│   │   ├── 📁 components/          # Componentes React
-│   │   │   ├── 📄 Dashboard.tsx    # Analytics e KPIs
-│   │   │   ├── 📄 Motoristas.tsx   # CRUD motoristas
+│   │   ├── 📁 components/
+│   │   │   ├── 📄 Dashboard.tsx    # Painel de métricas
+│   │   │   ├── 📄 Motoristas.tsx   # Gestão de motoristas
 │   │   │   └── 📄 Rotas.tsx        # Gestão de rotas
 │   │   └── 📁 services/
 │   │       └── 📄 api.ts           # Cliente HTTP
-└── 📁 docs/                        # Documentação adicional
-    ├── 📄 arquitetura.md
-    └── 📄 deployment.md
+└── 📁 docs/
+    └── 📄 arquitetura.md           # Documentação técnica
 ```
-
-<details>
-<summary><b>📊 Arquitetura de Comunicação</b></summary>
-
-```mermaid
-sequenceDiagram
-    participant F as Frontend
-    participant C as Cadastro Service
-    participant R as Roteirização Service
-    participant D as PostgreSQL
-    participant E as EventBus
-
-    F->>C: POST /motoristas
-    C->>D: INSERT motorista
-    C->>E: Publish "motorista.created"
-    C->>F: Motorista criado
-
-    F->>R: POST /rota
-    R->>C: GET /motoristas/:id
-    C->>R: Dados do motorista
-    R->>D: INSERT rota
-    R->>E: Publish "rota.created"
-    R->>F: Rota criada
-
-    F->>R: PUT /rotas/:id/status
-    R->>D: UPDATE status
-    R->>E: Publish "rota.status_changed"
-    R->>F: Status atualizado
-```
-
-</details>
 
 ---
 
@@ -647,92 +544,69 @@ curl http://localhost:4000/health
 # Verificar se APIs estão rodando
 # Verificar CORS no backend
 ```
+
+---
+
+## 📈 **Melhorias Futuras**
+
+### **Funcionalidades:**
+- 🗺️ **Integração Google Maps** - Rotas reais
+- 📱 **App Mobile** - React Native
+- 🔐 **Autenticação JWT** - Login/logout
+- 📊 **Relatórios Avançados** - PDF/Excel
+- 🔔 **Notificações Push** - WebSockets
+- 📍 **Rastreamento GPS** - Localização em tempo real
+
+### **Arquitetura:**
+- 🐳 **Containerização** - Docker/Kubernetes
+- ☁️ **Deploy Cloud** - AWS/Azure/GCP
+- 📈 **Monitoramento** - Prometheus/Grafana
+- 🔄 **CI/CD** - GitHub Actions
+- 🗄️ **Cache** - Redis
+- 🔍 **Logs Centralizados** - ELK Stack
+
+---
+
+## 👥 **Contribuição**
+
+Este é um projeto acadêmico, mas contribuições são bem-vindas:
+
+1. **Fork** o projeto
+2. **Crie** uma branch (`git checkout -b feature/nova-funcionalidade`)
+3. **Commit** suas mudanças (`git commit -am 'Adiciona nova funcionalidade'`)
+4. **Push** para a branch (`git push origin feature/nova-funcionalidade`)
+5. **Abra** um Pull Request
+
 ---
 
 ## 👨‍💻 **Autor**
 
 **Seu Nome**
 - GitHub: [@HenriquePlebani](https://github.com/HenriquePlebani)
-- Email: henrique.ple@outlook.com
+- Email: henrique.plebani@outlook.com
 - LinkedIn: [Henrique Plebani](https://linkedin.com/in/henrique-plebani-4816b42ba/)
 
 ---
 
-### **📊 Requisitos Atendidos**
+## 🙏 **Agradecimentos**
 
-| ✅ **Requisito** | 🚀 **Implementação** | 📈 **Status** |
-|:---------------:|:--------------------:|:-------------:|
-| **2+ Serviços Distribuídos** | Cadastro + Roteirização | 100% ✅ |
-| **Comunicação REST** | HTTP/JSON entre serviços | 100% ✅ |
-| **Banco Distribuído** | PostgreSQL compartilhado | 100% ✅ |
-| **Mensageria Assíncrona** | EventBus em memória | 100% ✅ |
-| **Interface Funcional** | React SPA completa | 100% ✅ |
-| **Tolerância a Falhas** | Validações + Tratamento | 100% ✅ |
-
-### **🏆 Funcionalidades Extras**
-- 📱 **Interface Responsiva** - Mobile + Desktop
-- 🎨 **UX/UI Moderna** - Design profissional
-- 🔍 **Filtros Avançados** - Busca inteligente
-- 📊 **Analytics Real-time** - Dashboard dinâmico
-- ⚡ **Validações Robustas** - Frontend + Backend
-- 📚 **Documentação Completa** - README profissional
+- Professor da disciplina de Sistemas Distribuídos
+- Documentação do Node.js, React e PostgreSQL
+- Comunidade open source
 
 ---
 
-## 🤝 **Contribuição**
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. 🍴 **Fork** o projeto
-2. 🌿 **Crie** uma branch (`git checkout -b feature/nova-funcionalidade`)
-3. 💾 **Commit** suas mudanças (`git commit -m 'feat: adiciona nova funcionalidade'`)
-4. 📤 **Push** para a branch (`git push origin feature/nova-funcionalidade`)
-5. 🔄 **Abra** um Pull Request
-
-### **📋 Roadmap Futuro**
-- [ ] 🗺️ Integração Google Maps API
-- [ ] 🔐 Autenticação JWT
-- [ ] 📱 App Mobile React Native
-- [ ] 🐳 Containerização Docker
-- [ ] ☁️ Deploy na nuvem
-- [ ] 📊 Relatórios PDF/Excel
+**⭐ Se este projeto te ajudou, considere dar uma estrela no GitHub!**
 
 ---
 
-## 👨‍💻 **Autor**
+## 📞 **Suporte**
 
-<div align="center">
+Para dúvidas ou problemas:
 
-**[Henrique Plebani]**
+1. **Verifique** a seção [Resolução de Problemas](#-resolução-de-problemas)
+2. **Consulte** a documentação das tecnologias utilizadas
+3. **Abra** uma issue no GitHub
+4. **Entre em contato** via email
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HenriquePlebani)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/henrique-plebani-4816b42ba/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:henrique.ple@outlook.com)
-
-*💻 Desenvolvedor Firmware | 🎓 Estudante de Análise e Desenvolvimento de Sistemas*
-
-</div>
-
----
-
-## 📄 **Licença**
-
-Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-<div align="center">
-
-### **🙏 Agradecimentos**
-
-Agradecimentos especiais ao **Professor da disciplina** de Sistemas Distribuídos e à comunidade open source que tornou este projeto possível.
-
----
-
-**⭐ Se este projeto te ajudou, considere dar uma estrela!**
-
-[![Star this repo](https://img.shields.io/github/stars/HenriquePlebani/sistema-logistica-distribuido?style=social)](https://github.com/HenriquePlebani/sistema-logistica-distribuido)
-
-**💙 Desenvolvido com dedicação para fins acadêmicos**
-
-</div>
+**Sistema desenvolvido com 💙 para fins acadêmicos**
