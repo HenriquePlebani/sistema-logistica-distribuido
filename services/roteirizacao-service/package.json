@@ -1,0 +1,20 @@
+{
+  "name": "roteirizacao-service",
+  "version": "1.0.0",
+  "description": "Serviço de roteirização e gestão de rotas",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "pg": "^8.11.3",
+    "axios": "^0.27.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
