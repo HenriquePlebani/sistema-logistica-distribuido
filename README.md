@@ -24,7 +24,11 @@
 | Validações Robustas | Comunicação Entre Serviços | KPIs e Métricas |
 | Filtros Avançados | Gestão de Status | Performance Tracking |
 
+
+---
+
 </div>
+
 ---
 
 ## 🚀 **Quick Start**
@@ -53,14 +57,6 @@ npm install && npm start
 ```
 
 <div align="center">
-
-### ✨ **Preview das Interfaces**
-
-| Dashboard | Motoristas | Rotas |
-|:---------:|:----------:|:-----:|
-| ![Dashboard](https://via.placeholder.com/250x150/667eea/ffffff?text=📊+Dashboard) | ![Motoristas](https://via.placeholder.com/250x150/10b981/ffffff?text=👥+Motoristas) | ![Rotas](https://via.placeholder.com/250x150/f59e0b/ffffff?text=🚛+Rotas) |
-
-</div>
 
 ---
 
@@ -655,7 +651,7 @@ curl http://localhost:4000/health
 **Seu Nome**
 - GitHub: [@HenriquePlebani](https://github.com/HenriquePlebani)
 - Email: henrique.ple@outlook.com
-- LinkedIn: [Seu Nome](https://linkedin.com/in/henrique-plebani-4816b42ba/)
+- LinkedIn: [Henrique Plebani](https://linkedin.com/in/henrique-plebani-4816b42ba/)
 
 ---
 
