@@ -27,10 +27,6 @@
 
 ---
 
-</div>
-
----
-
 ## 🚀 **Quick Start**
 
 ```bash
@@ -68,7 +64,7 @@ npm install && npm start
 
 ---
 
-## 🎯 **Sobre o Projeto**
+## 🎯 *Sobre o Projeto*
 
 Este sistema implementa uma **arquitetura de microserviços** para gerenciamento de frotas de caminhões, demonstrando na prática os conceitos fundamentais de sistemas distribuídos.
 
