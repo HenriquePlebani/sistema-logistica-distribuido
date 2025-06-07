@@ -24,32 +24,6 @@
 | Validações Robustas | Comunicação Entre Serviços | KPIs e Métricas |
 | Filtros Avançados | Gestão de Status | Performance Tracking |
 
-### 🏗️ **Arquitetura de Microserviços**
-
-```mermaid
-graph TB
-    subgraph "Frontend"
-        A[React App<br/>:3001]
-    end
-    
-    subgraph "Backend Services"
-        B[Cadastro Service<br/>:3000]
-        C[Roteirização Service<br/>:4000]
-    end
-    
-    subgraph "Dados"
-        D[(PostgreSQL<br/>Database)]
-        E[Event Bus<br/>Sistema de Eventos]
-    end
-    
-    A <--> B
-    A <--> C
-    B <--> C
-    B --> D
-    C --> D
-    B <--> E
-    C <--> E
-```
 
 ---
 
