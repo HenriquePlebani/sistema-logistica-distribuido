@@ -58,6 +58,9 @@ npm install && npm start
 
 <div align="center">
 
+
+</div>
+
 ---
 
 ## 🎯 **Sobre o Projeto**
